@@ -1,0 +1,37 @@
+{
+    "name": "LoRA",
+    "type": "override",
+    "fields": [
+        {
+            "name": "loras",
+            "type": "group",
+            "groupOptions": {
+                "count": 1,
+                "fields": [
+                    {
+                        "label": "Model",
+                        "name": "model",
+                        "type": "select",
+                        "width": "75%",
+                        "defaultValue": "Select a LoRA model",
+                        "selectOptions": {
+                            "items": []
+                        }
+                    },
+                    {
+                        "label": "Weight",
+                        "name": "weight",
+                        "type": "number",
+                        "width": "25%",
+                        "defaultValue": 1,
+                        "numberOptions": {
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.1
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
